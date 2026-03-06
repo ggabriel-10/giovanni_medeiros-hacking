@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #030a0f;
+  color: #c8e8f0;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #030a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #0e3a56;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00d4ff;
+}

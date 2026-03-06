@@ -1,0 +1,46 @@
+.formacao-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.edu-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: border-color 0.3s, opacity 0.6s ease, transform 0.6s ease;
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.edu-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.edu-card:hover { border-color: var(--border-glow); }
+
+.edu-card__icon { font-size: 1.5rem; flex-shrink: 0; }
+
+.edu-card__degree {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-bright);
+  margin-bottom: 0.2rem;
+}
+
+.edu-card__uni {
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.edu-card__period {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  margin-top: 0.25rem;
+}
