@@ -11,7 +11,7 @@ const Hero = () => {
 
           {/* LEFT CONTENT */}
           <div className="hero__content">
-            <div className="hero__tag fade-in">CYBER SECURITY ANALYST</div>
+            <div className="hero__tag fade-in">BLUE TEAM ANALYST</div>
 
             <h1 className="hero__name fade-in delay-1">
               Giovanni<br /><span className="hero__highlight">Medeiros</span>
@@ -28,7 +28,8 @@ const Hero = () => {
             </p>
 
             <div className="hero__badges fade-in delay-3">
-              <span className="badge green">SOC ANALYST</span>
+              <span className="badge green">BLUE TEAM</span>
+              <span className="badge">SOC ANALYST</span>
               <span className="badge">THREAT HUNTING</span>
               <span className="badge red">RED TEAM / CTF</span>
               <span className="badge">OSINT</span>

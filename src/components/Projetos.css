@@ -5,8 +5,8 @@
 }
 
 .proj-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: #111111;
+  border: 1px solid #3d0a0a;
   padding: 1.75rem;
   position: relative;
   overflow: hidden;
@@ -15,27 +15,23 @@
   transform: translateY(24px);
 }
 
-.proj-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+.proj-card.visible { opacity: 1; transform: translateY(0); }
 
 .proj-card::after {
   content: '';
   position: absolute;
   bottom: 0; left: 0; right: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  background: linear-gradient(90deg, #ff1111, #ff4444);
   transform: scaleX(0);
   transition: transform 0.3s;
   transform-origin: left;
 }
 
 .proj-card:hover::after { transform: scaleX(1); }
-
 .proj-card:hover {
-  border-color: var(--border-glow);
-  box-shadow: 0 0 30px rgba(0,212,255,0.08);
+  border-color: #ff1111;
+  box-shadow: 0 0 30px rgba(255,0,0,0.1);
 }
 
 .proj-card__label {

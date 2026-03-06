@@ -9,9 +9,9 @@
 
 .hero__glow {
   position: absolute;
-  width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(0,212,255,0.06) 0%, transparent 70%);
-  top: 50%; left: 50%;
+  width: 800px; height: 800px;
+  background: radial-gradient(circle, rgba(220,0,0,0.1) 0%, transparent 65%);
+  top: 50%; left: 30%;
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
@@ -23,7 +23,6 @@
   align-items: center;
 }
 
-/* TAG */
 .hero__tag {
   font-family: var(--mono);
   font-size: 0.75rem;
@@ -39,10 +38,9 @@
 .hero__tag::before {
   content: '';
   width: 30px; height: 1px;
-  background: var(--accent2);
+  background: var(--accent);
 }
 
-/* NAME */
 .hero__name {
   font-family: var(--display);
   font-size: 3.2rem;
@@ -53,9 +51,11 @@
   opacity: 0;
 }
 
-.hero__highlight { color: var(--accent); }
+.hero__highlight {
+  color: var(--accent);
+  text-shadow: 0 0 30px rgba(255, 17, 17, 0.5);
+}
 
-/* ROLE */
 .hero__role {
   font-family: var(--mono);
   font-size: 0.9rem;
@@ -68,11 +68,8 @@
   opacity: 0;
 }
 
-.hero__cursor {
-  animation: blink 1s step-end infinite;
-}
+.hero__cursor { animation: blink 1s step-end infinite; }
 
-/* DESC */
 .hero__desc {
   font-size: 1.05rem;
   color: var(--text);
@@ -82,7 +79,6 @@
   opacity: 0;
 }
 
-/* BADGES */
 .hero__badges {
   display: flex;
   flex-wrap: wrap;
@@ -91,38 +87,26 @@
   opacity: 0;
 }
 
-/* CTA */
-.hero__cta {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  opacity: 0;
-}
+.hero__cta { display: flex; gap: 1rem; flex-wrap: wrap; opacity: 0; }
 
-/* RIGHT COLUMN */
-.hero__right {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  opacity: 0;
-}
+.hero__right { display: flex; flex-direction: column; gap: 1.5rem; opacity: 0; }
 
 /* PHOTO */
 .hero__photo-wrapper {
   display: flex;
   justify-content: center;
   position: relative;
-  width: 160px;
-  height: 160px;
+  width: 160px; height: 160px;
   margin: 0 auto;
 }
 
 .hero__photo-ring {
   position: absolute;
   inset: -3px;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  background: linear-gradient(135deg, #ff1111, #ff5533);
   border-radius: 50%;
   z-index: 0;
+  box-shadow: 0 0 24px rgba(255,17,17,0.5);
 }
 
 .hero__photo-bg {
@@ -134,8 +118,7 @@
 }
 
 .hero__photo {
-  width: 160px;
-  height: 160px;
+  width: 160px; height: 160px;
   border-radius: 50%;
   object-fit: cover;
   object-position: top center;
@@ -155,10 +138,7 @@
 }
 
 @media (max-width: 768px) {
-  .hero__name { font-size: 2.2rem; }
-  .hero__grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
+  .hero__name  { font-size: 2.2rem; }
+  .hero__grid  { grid-template-columns: 1fr; gap: 2.5rem; }
   .hero__right { order: -1; }
 }

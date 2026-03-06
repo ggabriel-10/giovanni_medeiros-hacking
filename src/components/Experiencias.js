@@ -1,43 +1,17 @@
 import React, { useEffect, useRef } from 'react';
 import './Experiencias.css';
+import securewayImg from '../image/secureway-logo.jpg';
+import skyoneImg    from '../image/skyone-logo.png';
+import demetraImg   from '../image/demetra-logo.jpg';
+import vendonImg    from '../image/vendon-logo.png';
 
-/* ── Company Logos ── */
-const SecurewayLogo = () => (
-  <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <rect width="100" height="100" rx="8" fill="#0a1a26"/>
-    <path d="M50 15 L78 30 L78 55 C78 70 65 82 50 88 C35 82 22 70 22 55 L22 30 Z" fill="none" stroke="#00d4ff" strokeWidth="5"/>
-    <path d="M38 50 L46 58 L63 41" fill="none" stroke="#00ff9d" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round"/>
-  </svg>
-);
-
-const SkyoneLogo = () => (
-  <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <rect width="100" height="100" rx="8" fill="#0d1b2e"/>
-    <circle cx="50" cy="38" r="18" fill="none" stroke="#4fa3e0" strokeWidth="5"/>
-    <path d="M32 65 Q50 55 68 65 Q50 80 32 65Z" fill="#4fa3e0"/>
-  </svg>
-);
-
-const DemetraLogo = () => (
-  <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <rect width="100" height="100" rx="8" fill="#1a1a2e"/>
-    <rect x="18" y="30" width="64" height="10" rx="2" fill="#7b68ee"/>
-    <rect x="18" y="48" width="45" height="10" rx="2" fill="#7b68ee"/>
-    <rect x="18" y="66" width="28" height="10" rx="2" fill="#7b68ee"/>
-  </svg>
-);
-
-const VendonLogo = () => (
-  <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <rect width="100" height="100" rx="8" fill="#1a2e1a"/>
-    <polygon points="50,18 82,75 18,75" fill="none" stroke="#28c840" strokeWidth="5"/>
-    <circle cx="50" cy="54" r="8" fill="#28c840"/>
-  </svg>
+const ImgLogo = ({ src, alt }) => (
+  <img src={src} alt={alt} style={{ width: 36, height: 36, objectFit: 'contain', borderRadius: 4 }} />
 );
 
 const jobs = [
   {
-    Logo: SecurewayLogo,
+    logo: <ImgLogo src={securewayImg} alt="Secureway" />,
     logoColor: '#00d4ff',
     role: 'Cyber Security Analyst',
     company: 'Secureway',
@@ -55,8 +29,8 @@ const jobs = [
     ],
   },
   {
-    Logo: SkyoneLogo,
-    logoColor: '#4fa3e0',
+    logo: <ImgLogo src={skyoneImg} alt="Skyone" />,
+    logoColor: '#0099ff',
     role: 'Cyber Security Analyst',
     company: 'Skyone Solutions',
     period: 'MAY 2023 — MAY 2024',
@@ -71,8 +45,8 @@ const jobs = [
     ],
   },
   {
-    Logo: DemetraLogo,
-    logoColor: '#7b68ee',
+    logo: <ImgLogo src={demetraImg} alt="Demetra" />,
+    logoColor: '#cc2222',
     role: 'Infrastructure Analyst',
     company: 'Demetra Tecnologia',
     period: 'MAY 2022 — APR 2023',
@@ -86,8 +60,8 @@ const jobs = [
     ],
   },
   {
-    Logo: VendonLogo,
-    logoColor: '#28c840',
+    logo: <ImgLogo src={vendonImg} alt="Vendon" />,
+    logoColor: '#00aaff',
     role: 'Front-end Developer',
     company: 'Vendon Tecnologia',
     period: 'OCT 2021 — MAY 2022',
@@ -135,7 +109,7 @@ const Experiencias = () => {
               </div>
               <div className="exp-card__company-row">
                 <div className="exp-card__logo" style={{ '--logo-glow': job.logoColor }}>
-                  <job.Logo />
+                  {job.logo}
                 </div>
                 <div className="exp-card__company">
                   {job.company}
