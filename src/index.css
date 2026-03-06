@@ -1,16 +1,14 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-
 body {
-  background: #050505;
-  color: #d4cccc;
+  background: #020408;
+  color: #b8c8d8;
   font-family: 'Rajdhani', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
 }
-
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: #050505; }
-::-webkit-scrollbar-thumb { background: #3d0a0a; }
-::-webkit-scrollbar-thumb:hover { background: #ff1111; }
+::-webkit-scrollbar-track { background: #020408; }
+::-webkit-scrollbar-thumb { background: #0c2040; }
+::-webkit-scrollbar-thumb:hover { background: #1a6fff; }
