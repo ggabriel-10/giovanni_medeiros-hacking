@@ -24,7 +24,7 @@ function App() {
       <footer>
         <div className="container">
           <p className="footer-text">
-            <span>Giovanni Medeiros</span> · Cyber Security Analyst · Suzano, SP — 2025
+            <span>Giovanni Medeiros</span> · Cyber Security Analyst · Suzano, SP — 2026
           </p>
         </div>
       </footer>

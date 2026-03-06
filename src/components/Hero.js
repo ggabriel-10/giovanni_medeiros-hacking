@@ -11,7 +11,7 @@ const Hero = () => {
 
           {/* LEFT CONTENT */}
           <div className="hero__content">
-            <div className="hero__tag fade-in">BLUE TEAM ANALYST</div>
+            <div className="hero__tag fade-in">Ethical Hacking</div>
 
             <h1 className="hero__name fade-in delay-1">
               Giovanni<br /><span className="hero__highlight">Medeiros</span>
@@ -84,7 +84,7 @@ const Hero = () => {
 
                 <div className="t-line"><span className="t-prompt">$</span><span className="t-cmd">cat current_role.txt</span></div>
                 <div className="t-out"><span className="t-val3">Cyber Security Analyst</span></div>
-                <div className="t-out"><span className="t-val2">@ Secureway [ACTIVE]</span></div>
+                <div className="t-out"><span className="t-val2">@ Stefanini Cyber [ACTIVE]</span></div>
 
                 <div className="t-line"><span className="t-prompt">$</span><span className="t-cmd">ls certifications/</span></div>
                 <div className="t-out"><span className="t-val">AZ-900  FCF  FCA  OCI  TM-XDR</span></div>

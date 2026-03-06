@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import './Experiencias.css';
-import securewayImg from '../image/secureway-logo.jpg';
-import skyoneImg    from '../image/skyone-logo.png';
-import demetraImg   from '../image/demetra-logo.jpg';
-import vendonImg    from '../image/vendon-logo.png';
+import stefaniniImg  from '../image/stefanini-logo.png';
+import securewayImg  from '../image/secureway-logo.jpg';
+import skyoneImg     from '../image/skyone-logo.png';
+import demetraImg    from '../image/demetra-logo.jpg';
+import vendonImg     from '../image/vendon-logo.png';
 
 const ImgLogo = ({ src, alt }) => (
   <img src={src} alt={alt} style={{ width: 36, height: 36, objectFit: 'contain', borderRadius: 4 }} />
@@ -11,12 +12,28 @@ const ImgLogo = ({ src, alt }) => (
 
 const jobs = [
   {
+    logo: <ImgLogo src={stefaniniImg} alt="Stefanini Cyber" />,
+    logoColor: '#ff4488',
+    role: 'Cyber Security Analyst',
+    company: 'Stefanini Cyber',
+    period: 'JUN 2025 — PRESENT',
+    current: true,
+    tasks: [
+      'Administração das plataformas Trend Micro, Cloudflare e SentinelOne',
+      'Proteção de endpoints, aplicações e infraestrutura corporativa',
+      'Implementação de WAF, Zero Trust (ZTNA), CASB e políticas de segurança',
+      'Monitoramento de incidentes e análise de ameaças em endpoints',
+      'Elaboração de relatórios de vulnerabilidades e postura de segurança',
+      'Automação de processos com Python, Shell Script e React',
+    ],
+  },
+  {
     logo: <ImgLogo src={securewayImg} alt="Secureway" />,
-    logoColor: '#00d4ff',
+    logoColor: '#1a6fff',
     role: 'Cyber Security Analyst',
     company: 'Secureway',
-    period: 'FEB 2024 — PRESENT',
-    current: true,
+    period: 'FEB 2024 — JUN 2025',
+    current: false,
     tasks: [
       'Administração das soluções Trend Micro e Sophos',
       'Gestão de vulnerabilidades com Qualys e Nessus',
