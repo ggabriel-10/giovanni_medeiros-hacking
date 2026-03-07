@@ -38,7 +38,7 @@ const skillsData = [
       { label: 'AXUR', hot: true },
       { label: 'Threat Intelligence' },
       { label: 'Análise de Metadados' },
-      { label: 'Perícia Digital' },
+      { label: 'Perícia Digital', hot: true },
     ],
   },
   {
@@ -49,6 +49,7 @@ const skillsData = [
       { label: 'Nessus', hot: true },
       { label: 'Imperva WAF' },
       { label: 'API Security' },
+      { label: 'CloudFlare', hot: true },
       { label: 'Anti-Bot / ABP' },
       { label: 'Firewall Analysis' },
     ],
